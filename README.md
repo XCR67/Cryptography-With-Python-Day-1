@@ -1,2 +1,4 @@
 # Cryptography-With-Python-Day-1
 Dedicated to understanding the basics of python syntax and aspects of coding in general. Has a password checker and generator project at the end
+
+The general flow of the camp will be Slideshow > Review and Practice > Make project > Review project concepts > Hint next day's concepts. Since this is Day 1 we're only covering the basics of Python itself and then going into cryptography after this day. The basics will be mainly about understanding if statements and for loops as well as syntax. Another component will be input() which we will be using for the project at the end, that being the Password Checker. Its fine if they do not make password checker due to time constraints, the fact they understand the basics and syntaxis more important. Also you can make new examples for the students if they do not fully grasp a given concept.
