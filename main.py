@@ -1,4 +1,4 @@
-#PYTHON BASICS, PASSWORD CHECKER / GENERATOR ON LINE 78, CAESER CIPHER ON LINE 150
+#PYTHON BASICS, PASSWORD CHECKER / GENERATOR ON LINE 78
 #DAY 1 - PYTHON BASICS
 import random 
 #^Dont type until line 21, make sure its written at the top
@@ -6,10 +6,19 @@ import random
 #again with different examples
 #String initilization examples
 name = "Your name here"
-name2 = input("Enter your name")
-
+name2 = input("Give me your name: ")
 print(name)
 print(name2)
+#String concantanation and casting
+print(name + name2 = "Type whatever here")
+n = int(input("Give me a number: "))
+print(str(n))
+#Substrings
+strExample = input("Give me a string: ")
+strIndex = int(input("Give an index within the string length: ")
+print(strExample[strIndex] + " < Letter at " + str(strIndex))
+print(strExample[strIndex:] + " < Everything after it ")
+print(strExample[:strIndex] + " < Everything before it")
 #Num Initilization
 num = 2
 num2 = 14
@@ -74,18 +83,17 @@ for i in range(len(myName)):
   print(myName[i])
 
 
-#NOTE - IF LOW ON TIME JUST MAKE THE CHECKER AND ASK FOR USER INPUT OR JUST SKIP
-#FUNDAMENTALS IN PYTHON SYNTAX AND UNDERSTANDING OF IT ARE MORE IMPORTANT THAN
-#THIS PASSWORD PROJECT
 #Checks to see if a password is secure enough
 def passwordChecker(password):
-  #Variable Creation
+  #Variable Creation, need a result string and a boolean for
+  #lowercase letters, uppercase letters, numbers, and special characters
   recc = ""
   hasLow = False
   hasUpp = False
   hasNum = False
   hasSpe = False
-  #Loop to check for each requirement
+  #Loop through each letter in the password, checking to see if it is a
+  #letter(Upp), letter(Low), number, or special character
   for i in range(len(password)):
     #If the current character is a letter (Then chcecks for upper / lower)
     if password[i].isalpha(): #isAlpha() checks if it is a letter
@@ -135,7 +143,7 @@ def passwordGenerator(length):
       result += specChar[random.randrange(0, len(specChar) - 1)]#add special char
   return result
 #Password Checker using a randomly generated password
-randpassword = passwordGenerator(16)
+randpassword = passwordGenerator(16) #Can use input() instead
 print(randpassword)
 print(passwordChecker(randpassword))
 #Password Checker with a user generated password
