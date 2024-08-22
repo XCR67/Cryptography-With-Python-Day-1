@@ -1,4 +1,4 @@
-#PYTHON BASICS, PASSWORD CHECKER / GENERATOR ON LINE 78
+#PYTHON BASICS, PASSWORD CHECKER / GENERATOR ON LINE 86
 #DAY 1 - PYTHON BASICS
 import random 
 #^Dont type until line 21, make sure its written at the top
