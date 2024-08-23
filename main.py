@@ -150,3 +150,4 @@ print(passwordChecker(randpassword))
 userpassword = input("Enter a password: ")
 print(userpassword)
 print(passwordChecker(userpassword))
+#Thats all!
